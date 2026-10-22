@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نظام إدارة شئون العاملين - مدرسة وي للتكنولوجيا التطبيقية بالمنيا</title>
+    <meta name="description" content="منظومة إلكترونية متكاملة ومؤمنة لإدارة شئون العاملين، ملفات الموظفين، متابعة المستندات والتقارير الإحصائية لمدرسة وي للتكنولوجيا التطبيقية بالمنيا" />
+    <meta property="og:title" content="نظام إدارة شئون العاملين - مدرسة وي للتكنولوجيا التطبيقية بالمنيا" />
+    <meta property="og:description" content="منظومة إلكترونية متكاملة ومؤمنة لإدارة شئون العاملين، ملفات الموظفين، متابعة المستندات والتقارير الإحصائية لمدرسة وي للتكنولوجيا التطبيقية بالمنيا" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // In AI Studio iFrame preview, HMR WebSocket is disabled.
+      // Suppress any stray WebSocket reconnection errors in the capture phase.
+      window.addEventListener('error', function(e) {
+        if (
+          (e.message && (e.message.includes('WebSocket') || e.message.includes('createWebSocketModuleRunnerTransport'))) ||
+          (e.filename && e.filename.includes('@vite/client')) ||
+          (e.target && e.target instanceof WebSocket)
+        ) {
+          e.stopImmediatePropagation && e.stopImmediatePropagation();
+          e.preventDefault && e.preventDefault();
+          return true;
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e.reason && (
+          (e.reason.message && (e.reason.message.includes('WebSocket') || e.reason.message.includes('createWebSocketModuleRunnerTransport'))) ||
+          (typeof e.reason === 'string' && e.reason.includes('WebSocket')) ||
+          (e.reason.stack && e.reason.stack.includes('createWebSocketModuleRunnerTransport'))
+        )) {
+          e.stopImmediatePropagation && e.stopImmediatePropagation();
+          e.preventDefault && e.preventDefault();
+          return true;
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-purple-100 selection:text-purple-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
